@@ -41,7 +41,7 @@ class _News_hState extends State<News_h> {
   }
 
   Future<List<Article>> getNewsdata() async {
-    NewsAPI newsAPI = NewsAPI("6d3d6ebea6004e4995939bb7a62f9f5c");
+    NewsAPI newsAPI = NewsAPI(apiKey: "6d3d6ebea6004e4995939bb7a62f9f5c");
     return await newsAPI.getTopHeadlines(
         country: selectedcountry,
         query: searchterm,
